@@ -1,7 +1,7 @@
 LiquidCrystal-I2C
 =================
 
-This is a really small libraty to control a 16x2 LCD
+This is a really small library to control a 16x2 LCD
 character display over the I2C bus in Arduino.
 
 You'll need an ATmega328 with the 8Mhz breadboard bootloader.
