@@ -10,29 +10,41 @@ The ATmega328 works as a display controller for the really
 common and available 16x2 screens based on the HD44780 paraller
 interface.
 
+This library is currently a little bit limited. It only support
+the following functions from Liquid Crystal:
+
+> home()
+> clear()
+> setCursor(col, row)
+> print()+
+
++Limited functionality, currently it only accepts strings as
+data input.
 
 Usage
 ================
 
-Prepare your ATmega328 with the 8Mhz breadboard bootloader, for
+1. Copy LiquidCrystalI2C to your Arduino/libraries folder.
+
+2. Prepare your ATmega328 with the 8Mhz breadboard bootloader. For
 doing this you can follow the instructions at this address:
 
-http://arduino.cc/en/Tutorial/ArduinoToBreadboard
+> http://arduino.cc/en/Tutorial/ArduinoToBreadboard
 
 Look for the section "Minimal Circuit".
 
-Wire the LCD screen as shown on the picture:
+3. Wire the LCD screen as shown on the picture:
 
-http://arduino.cc/en/Uploadas/Tutorial/LCD_bb.png
+> http://arduino.cc/en/Uploadas/Tutorial/LCD_bb.png
 
-Connect the lines A4 and A5 between your Arduino and the
-ATmega328 use a couple of 4.7K resistances to VCC..
+4. Connect the lines A4 and A5 between your Arduino and the
+ATmega328 use a couple of 4.7K pull-up resistors to VCC.
 
-Upload the Sketch "WireSlave" to the ATMega328.
+5. Upload the Sketch "WireSlave" to the ATMega328.
 
-Upload the Sketch "WireMaster" to your Arduino.
+6. Upload the Sketch "WireMaster" to your Arduino.
 
-Enjoy!
+7. Enjoy!
 
 
 License
