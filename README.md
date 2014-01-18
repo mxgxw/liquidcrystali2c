@@ -34,7 +34,7 @@ Upload the Sketch "WireMaster" to your Arduino.
 Enjoy!
 
 
-Licence
+License
 =================
 
 LiquidCrystal-I2C a simple way to control a 16x2 LCD display over I2C.
