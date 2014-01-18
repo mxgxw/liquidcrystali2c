@@ -1,0 +1,26 @@
+#include <Wire.h>
+#include "LiquidCrystalI2C.h"
+
+LiquidCrystalI2C lcdI2C;
+
+void setup() {
+  Wire.begin();
+  
+  lcdI2C = LiquidCrystalI2C(85);
+  lcdI2C.clear();
+}
+
+int count = 0;
+char buffer[16];
+
+void loop() {
+  lcdI2C.home();
+  lcdI2C.print("Hola TeUbi.co!");
+  lcdI2C.setCursor(0,1);
+  itoa(count++,buffer,10);
+  lcdI2C.print(buffer);
+  delay(1000);
+}
+
+
+
