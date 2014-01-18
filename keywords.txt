@@ -1,0 +1,7 @@
+LiquidCrystalI2C    KEYWORD1
+
+clear               KEYWORD2
+home                KEYWORD2
+print               KEYWORD2
+setCursor           KEYWORD2
+debug               KEYWORD2
