@@ -7,7 +7,7 @@ character display over the I2C bus in Arduino.
 You will need an ATmega328 with the 8Mhz breadboard bootloader.
 
 The ATmega328 works as a display controller for the really
-common and available 16x2 screens based on the HD44780 paraller
+common and available 16x2 screens based on the HD44780 parallel
 interface.
 
 This library is currently a little bit limited. It only support
